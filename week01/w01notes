@@ -90,4 +90,53 @@ git push
 
 With a shared repository, individuals and teams are explicitly designated as contributors with read, write, or administrator access. This simple permission structure, combined with features like protected branches, helps teams progress quickly when they adopt GitHub.
 
-For an open source project, or for projects to which anyone can contribute, managing individual permissions can be challenging, but a fork and pull model allows anyone who can view the project to contribute. A fork is a copy of a project under a developer's personal account. Every developer has full control of their fork and is free to implement a fix or a new feature. Work completed in forks is either kept separate, or is surfaced back to the original project via a pull request. There, maintainers can review the suggested changes before they're merged. For more information, 
+For an open source project, or for projects to which anyone can contribute, managing individual permissions can be challenging, but a fork and pull model allows anyone who can view the project to contribute. A fork is a copy of a project under a developer's personal account. Every developer has full control of their fork and is free to implement a fix or a new feature. Work completed in forks is either kept separate, or is surfaced back to the original project via a pull request. There, maintainers can review the suggested changes before they're merged. 
+
+- Can change directories by using the cd command followed by the name of the directory to change to. ex: cd pictures moves into a folder beneath or in the current folder named "pictures". A single period . refers to the current directory, and two periods.. refers to the parent directory. Thus , typing cd .. will change to the parent folder of the one you were in. 
+
+-There are two ways to refer to a location in the file system, an absolute, or full path to the location, or a relative path that describes the location in relation to your current location.
+
+For example, a file might have an absolute path of /home/brigham/pictures/family.jpg and you could always use that full path to refer to it, but if you were already in the /home/brigham directory, you could refer to it as pictures/family.jpg (or an equivalent way that uses the the single period, current directory notation: ./pictures/family.jpg )
+l
+
+-Making Changes
+Creating a repository and cloning it to your computer only needs to be done once at the beginning of the project, so those commands are not used as frequently. Once you have everything set up, you will begin your regular process of making changes and pushing them to GitHub.
+
+Any changes need to go through the following steps:
+
+Make your changes
+Add them to a staging area where they get ready for the next commit.
+Commit all the changes that have been staged.
+This stores the changes in the repo on your computer, but they are not at GitHub yet.
+Push your repo to GitHub.
+This sends your changes and makes sure the two repos (on your computer and at GitHub) are in sync.
+If you were working with another person, Git would make you "pull" from GitHub at the same time to make sure you get a copy of any changes that GitHub has that your computer does not have yet.
+
+-To add a file to the staging area so that it can be part of the next commit, you use the command git add followed by the name of the file that has changed or been created. For example:
+
+
+git add myFile.txt
+
+-If you are running the git command from a different folder, it is important that you specify the full name of the file, using either an absolute or a relative path. For example:
+
+
+git add csharp-prep/Prep1/Program.cs
+
+-You can also specify a directory, which will add anything that has changed in that directory (or any subdirectories beneath it). Remembering that the single period . represents the current directory, you can use a shorthand syntax to add the current directory and everything beneath it by typing:
+
+
+git add .
+
+-When you are ready to commit all of the files that have been staged, you use the git commit command followed by a commit message. For example:
+
+
+git commit -m "Fixed problems where nothing was displayed on the screen.
+
+-If you forget to include a commit message, git will take you to a text editor to type one in. On most systems this will take you to a default editor called vim. This may or may not be your favorite editor. If it is not, and you simply want to exit, press the Escape key a couple of times and then type :q! (the : tells it you are entering a command, the q says you want to quit, and the ! says you are not worried about saving changes).
+
+This will help you exit the editor. You can then run the commit command again, this time with the -m for your message.
+
+-Once you have committed your changes to your local repository, you can push them to GitHub using the git push command. For example:
+
+
+git push origin main
