@@ -140,3 +140,84 @@ This will help you exit the editor. You can then run the commit command again, t
 
 
 git push origin main
+
+-COMAND FOR ADDING COMMIT AND PUSHING FROM COMMAND LINE
+
+git add . 
+git command -m "message"
+git push
+
+--C# (c-sharp)--
+
+In C#, when a variable is declared, its data type must be specified. 
+
+ou declare a variable, by specifying the type. Later, when you use the variable, you do not need to specify the type again.
+
+example: 
+
+int x; 
+x = 5;
+Console.Writeline(x);
+
+or
+
+int x = 5;
+Console.Writeline(x);
+
+common built in variable types:
+int - integers (whole numbers, positive and negative)
+
+string - a sequence of characters, including lettters, numbers, or symbols.
+
+float - floating point numbers. 
+
+double - double precision floating point numbers just like a float, exvept it takes up twince as much memory, so it can hold larger numbers or numbers with more decimal places.
+
+bool - boolean variables (true or false)
+
+--input and output--
+In C# to print something as output to the console, you use Console.WriteLine("") function.
+
+Python
+print("Hello World!")
+
+C#
+Console.WriteLine("Hello World!");
+
+Console.WriteLine("") will print a full line including the new line. 
+If you don't want a new line at the end use Console.Write("")
+
+Console.Write("There will not be a newline after this.");
+
+-To get input from user Console.ReadLine() function. 
+
+Console.Write("What is your favorite color? ");
+string color = Console.ReadLine();
+
+- Curly braces {} define the body of an if statement or a function. in C# you indent the body, nut this is only a convention, the mechanism that defines the body is the curly braces {}.
+
+- In C# you don't use a colon : to start the body and when using if statements, you must always put the condition in parentheses ().
+
+C#
+if (x > y)
+{
+  Console.WriteLine("greater");
+}
+
+
+Python
+if x > y:
+  print("greater")
+
+-Statements end in semicolons ;. Typically one statement  will be one line, however, soometimes you may have a long statement that extends on multiple lines until the semicolon ; is reached.
+
+-String interpolation. if you woould like to use a variable inside a string, start the string with a dollar sign $ in the same way that python, you start a format with f.
+
+Python
+school = "BYU-Idaho"
+print(f"I am studying at {school}.")
+
+C#
+string school = "BYU-Idaho";
+Console.WriteLine($"I am studying at {school}.");
+
