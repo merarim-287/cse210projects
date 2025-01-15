@@ -221,3 +221,16 @@ C#
 string school = "BYU-Idaho";
 Console.WriteLine($"I am studying at {school}.");
 
+
+
+-------------------------
+
+When you are using a command line terminal, you will currently "in" a particular directory or folder. This is called a current working directory. You can see the current directory by typing the command "pwd" (print working directory).
+
+You can change directories by using "cd" command followed by the name of the directory to change to. for example, "cd pipctures" ,obes into a folder beneath or in the current folder naed, "pictures" a. A single period "." refers to the current directory, and two periods  ".." refers to the parent directory. Typing "cd .." will change to the parent folder of the one you were in.
+
+
+------------------------------------
+
+1 - open workspace folder
+2 - 
