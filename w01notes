@@ -234,3 +234,43 @@ You can change directories by using "cd" command followed by the name of the dir
 
 1 - open workspace folder
 2 - 
+
+
+----------
+
+Input - it's called Console.ReadLine()     
+prompt is displayed in Console.Write("")
+
+
+# Console.Write("What is your favorite color? ");
+# sting color = Console.ReadLine();
+
+Block of code:
+when using if statements you must always put the condition in parentheses ().
+# it (x > y)
+# {
+#  Console.WriteLine("greater")
+# }
+
+
+if you would like to use a variable inside a string, you start the string with a dollar sign $ in the same way that in Python, you start a format string with an f. 
+
+# string school = "BYU-Idaho";
+# Console.WriteLine($"I am studying at {school}.");
+
+basic C# layout:
+
+using System;
+
+namespace game
+{
+    class Program
+    {
+      Console.WriteLine("Hello World!");
+      Console.WriteLine("This is in C#");
+
+      Console.WriteLine("What is your favorite color? ");
+      string color = Console.ReadLine();
+      Console.WriteLine(color);
+    }
+}
