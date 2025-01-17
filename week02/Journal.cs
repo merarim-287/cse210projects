@@ -14,7 +14,9 @@ public class Program
 public class Entry
 {
     string _entries = new Entry(string_entries);
-
+    string filePath = "Entry.cs";
+    File/WriteAllText(filePath, _entries);
+    
     public void ()
 {
         while (true)
