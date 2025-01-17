@@ -1,5 +1,3 @@
-using System.ComponentModel.DataAnnotations;
-using System.Reflection.Metadata;
 public class Job
 {
     public string _jobTitle{get; set;}
@@ -9,7 +7,6 @@ public class Job
 
     public Job()
     {
-    
         Console.Write("What is the name of the company you worked at?");
         Company = Console.ReadLine(); 
  
@@ -23,4 +20,3 @@ public class Job
         EndYear = int.Parse(Console.ReadLine());
     }
 }
-
