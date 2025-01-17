@@ -1,26 +1,32 @@
-using System;
-
 class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
+        Job job1 = new Job();
         Console.WriteLine("Hello World! This is the Resumes Project.");
     }
 }
 
 public class Job
 {
-    public string _jobTitle;    
-        Console.Write("What was your _jobtitle?");
-        Job.Title = Console.ReadLine();
+    public string JobTitle { get; set; }
+    public int StartYear { get; set; }
+    public int EndYear { get; set; }
 
-    public int _startYear;
-        Console.Write("Enter the year you started working there:");  
-        Job.StartYear = Console.ReadLine();
-    public int _endYear;
-        Console.Write("Enter the year you stopped working there:");
-        Job.EndYear = Console.ReadLine();
+    public void GetJobDetails()
+    {
+        Console.Write("What was your job title? ");
+        JobTitle = Console.ReadLine();
+
+        Console.Write("Enter the year you started working there: ");
+        StartYear = int.Parse(Console.ReadLine());
+
+        Console.Write("Enter the year you stopped working there: ");
+        EndYear = int.Parse(Console.ReadLine());
+    }
+
+    public void DisplayJobDetails()
+    {
+        Console.WriteLine($"You worked as a {JobTitle} from {StartYear} to {EndYear}");
+    }
 }
-
-DisplayJobDetails
-    Console.WriteLine($"You worked at {Company} as a {Job} from {StartYear} to {EndYear}");

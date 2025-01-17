@@ -1,6 +1,3 @@
-using System;
-using System.Globalization;
-using System.Net;
 using System.Security.Cryptography;
 
 class Program
@@ -13,7 +10,7 @@ class Program
 
         while (guess != magicNumber)// While loop
         {
-            Console.WriteLine("What is the magic number? ") ;
+            Console.WriteLine("What is the magic number? ");
             guess = int.Parse(Console.ReadLine());
 
             if (magicNumber > guess)
