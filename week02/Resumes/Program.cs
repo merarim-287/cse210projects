@@ -1,3 +1,6 @@
+using System.Diagnostics;
+
+[DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
 class Program
 {
     public static void Main(string[] args)
@@ -5,28 +8,32 @@ class Program
         Job job1 = new Job();
         Console.WriteLine("Hello World! This is the Resumes Project.");
     }
-}
 
-public class Job
+    private string GetDebuggerDisplay()
+    {
+        return ToString();
+    }
+}
+class Job
 {
     public string JobTitle { get; set; }
     public int StartYear { get; set; }
     public int EndYear { get; set; }
 
-    public void GetJobDetails()
+    public void ()
     {
         Console.Write("What was your job title? ");
-        JobTitle = Console.ReadLine();
+        jobTitle = Console.ReadLine();
 
         Console.Write("Enter the year you started working there: ");
-        StartYear = int.Parse(Console.ReadLine());
+        startYear = int.Parse(Console.ReadLine());
 
-        Console.Write("Enter the year you stopped working there: ");
-        EndYear = int.Parse(Console.ReadLine());
-    }
+    Console.Write("Enter the year you stopped working there: ");
+        endYear = int.Parse(Console.ReadLine());
+}
 
-    public void DisplayJobDetails()
-    {
-        Console.WriteLine($"You worked as a {JobTitle} from {StartYear} to {EndYear}");
-    }
+public void DisplayJobDetails()
+{
+    Console.WriteLine($"You worked as a {JobTitle} from {StartYear} to {EndYear}");
+}
 }
