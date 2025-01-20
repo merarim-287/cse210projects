@@ -1,22 +1,38 @@
-using System.Diagnostics;
-using System.Security.Cryptography.X509Certificates;
-class Fraction
+using System;
+
+class Program
 {
-    static void Fraction Main(string[] args)
+    static void Main(string[] args)
+    {
+        int numerators = { 0, 0, 5, 3, 1 };
+        int denominators = { 1, 1, 1, 4, 3 };
+
+        for (int i = 0; i < numerators.Length; i++)
+        {
+            Fraction fraction = new Fraction(numerators i, denominators i);
+            Console.WriteLine($"Fraction: {fraction.GetFractionString()} - Decimal: {fraction.GetDecimalValue()}");
+        }
+    }
 }
 
-    private int _top;
-    private int _bottom;
-    public Fraction()
-    {
-        Console.WriteLine("Hello World! This is the Fractions Project.");
-        _top = 0;
-        _bottom = 0;
-    }
-    public Fraction(int wholeNumber)
-    {
-    }
-    public Fraction(TraceOptions options, int bottom)
+class Fraction
 {
-}
+    private int _numerator;
+    private int _denominator;
+
+    public Fraction(int numerator, int denominator)
+    {
+        _numerator = numerator;
+        _denominator = denominator;
+    }
+
+    public string GetFractionString()
+    {
+        return $"{_numerator}/{_denominator}";
+    }
+
+    public double GetDecimalValue()
+    {
+        return (double)_numerator / _denominator;
+    }
 }
