@@ -15,6 +15,7 @@ class Program
     }
 }
 
+
 class Fraction
 {
     private int _numerator;
