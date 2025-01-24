@@ -6,7 +6,7 @@ public class Program
     public static void Main(string[] args)
 
         Console.WriteLine("Please chose from the following options: ");
-            string options = Console.WriteLine("1. Write\n2. Display\n3. Load\n4. Save\n5. Quit\n\n");
+        string options = Console.WriteLine("1. Write\n2. Display\n3. Load\n4. Save\n5. Quit\n\n");
     int menu = int.Parse(Console.ReadLine());
             
             switch (menu)
