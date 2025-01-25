@@ -2,28 +2,26 @@ using System.Dynamic;
 using System.Reflection.Metadata.Ecma335;
 using System.Runtime.CompilerServices;
 
-class Program
+namespace ScriptureMemorizer
 {
+    class Program
+    {
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World! This is the ScriptureMemorizer Project.");
     }
 }
 
-global::System.Object value = Console.Clear();
+Console.Clear();
 
 public class Scripture
 {
     public string verse { get; set; }
-
     public Scripture(Reference reference, string verse)
     {
-        Console.WriteLine(verse);
-
         string Text = scriptureStorage.Text;
         Console.WriteLine(verse);
-    }
-        
+    }  
         while (true)
         {
             Console.WriteLine("Please press Enter to hide words, or typw 'quit' to exit.");
