@@ -2,27 +2,45 @@ using System;
 using System.Collections.Generic;
 
 public class Word
-
 {
-    public Reference reference { get; set; }
-    public List<Word> Random _random =  Word { get; }
+    public string Text { get; set; }
+    public Hider { get; set; }
 
-public Scripture(Reference reference, List<Word> words)
+public Word(verse)
 {
-    Reference = reference;
-    Words = SplitWords(words);
+    Verse = text;
+    Hider = false;
+}
+
+public Hider()
+{
+    Hider = true;
+}
+
+public override string ToString()
+{
+    return Hider ? new string('_', RandomWord.Length) : Text;
+}
 }
 
 
-public void HideRandomWord(int numberToHide)
+public void HideWord()
 {
-    words = Scripture.Text.Split('_');
-    hiddenWord = new Hidden<int>()
+    RandomWord randomword = new RandomWord();
+    int index = randomword.Next(Word.Count);
+
+    Word[index].Hider();
+}
+
+public override string ToString()
+{
+    string verse = string.Empty;
+    forword(word in words)
+    {
+        text += word.ToString() + " ";
     }
 
-private List
-<Words> SplitWords(string text)
-    []
-return words;
-    }
+    return $"{Reference}: {text.Trim()}";
 }
+}
+
