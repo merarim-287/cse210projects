@@ -1,0 +1,30 @@
+(Abstraction)
+
+Class Video
+
+should be private constructor
+
+list of videos
+
+video(title : string, length : int, atuthor : string)
+
+_title : string(private)
+_length: int(private)
+_author : string(private)
+_comments : List<comment>(private)
+-----------------------------------
+Video(title: string; length : int, author : string)
+
+GetComment(author : string) : void
+DisplayVideoInfo(): void
+
+
+-------------------------------
+comment
+
+_author : string (private)
+_text : string(private)
+---------------------------------
+Comment(author:string, text: string)
+
+DisplayComment(): void

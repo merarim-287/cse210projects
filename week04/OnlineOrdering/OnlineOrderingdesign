@@ -1,0 +1,43 @@
+(Encapsulation)
+
+order class 
+
+_customer: _customer
+_products: List<Product>(private)
+
+Order(customer: Customer)
+
+GetProduct():void
+TotalPrice():double
+PackingLabel():void
+DisplayOrderInfo():void
+
+Product class 
+
+_name: string
+_productID : string
+_price : double
+_quantity: int 
+
+Product(name:string, ID:string, price:double, quantity:int)
+
+Adress class
+
+_streetAdress : string
+_city: string
+_stateProvince: string
+_country: string
+
+Adress(street: string, city:string, country: string)
+
+IsUS():bool
+AdressString():string
+
+Customer class
+
+_name: string
+_adress: Adress
+
+Customer(name:string, street:string, city:string, state:string, country:string)
+
+GetInfo(): void

@@ -1,0 +1,27 @@
+public class Order
+{
+    public list<string> items
+
+   
+    string menu = Console.ReadLine.("Chose from the following items:");
+    ConsoleWriteLine.("");
+
+
+    
+    {
+        if  (item1)
+            price = 1.99;
+    item1.Add(price)
+        {
+            Console.WriteLine(item1).AddToCart;
+        }
+
+if (item2)
+    price = 1.50;
+item2.Add(price).AddToCart;
+{
+    Console.WriteLine(item2).AddToCart;
+}
+
+    }
+}
