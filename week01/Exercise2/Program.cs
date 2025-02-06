@@ -6,6 +6,8 @@ class Program
         string userInput = Console.ReadLine();
         int grade = int.Parse(answer);
 
+        string letter;
+
         if (grade >= 90)
         {
             letter = "A";
