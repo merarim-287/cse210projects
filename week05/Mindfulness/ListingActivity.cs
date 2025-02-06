@@ -1,0 +1,1 @@
+class ListingActivity : Activity
