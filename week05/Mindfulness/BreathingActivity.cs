@@ -75,4 +75,7 @@ class BreathingActivity : Activity
             Console.WriteLine("Well done.");
 
         }
+        
+        Console.WriteLine("You finished your breathing exercise.");
+        return;
     }
