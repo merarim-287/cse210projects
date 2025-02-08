@@ -1,29 +1,8 @@
+public class Activity
+{
 
 
-List<string> animationStrings = new List<string>();
-        animationStrings.Add("|");
-        animationStrings.Add("/");
-        animationStrings.Add("-");
-        animationStrings.Add("\\");
-        animationStrings.Add("/");
-        animationStrings.Add("-");
-        animationStrings.Add("|");
-        animationStrings.Add("/");
-        animationStrings.Add("-");
-        animationStrings.Add("\\");
-        animationStrings.Add("/");
-        animationStrings.Add("-");
-        animationStrings.Add("|");
-
-        foreach (string s in animationStrings)
-        {
-            Console.WriteLine(s);
-            Thread.Sleep(1000);
-            Console.Write("\b \b");
-
-        }
-
-class Prompts : Reflection
+public class Prompts : Reflection
 {
     public List<string> Prompts = new List<string>
     {
@@ -31,8 +10,7 @@ class Prompts : Reflection
         Prompt2 = "Think of a time when you stood up for someone else."
         Prompt3 = "Think of a time when you helped someone in need  ."
     }
-}
- class SubPrompts : Reflection
+    public class SubPrompts : Reflection
     {
         public List<string> SubPrompts = new List<string>
         {
@@ -41,3 +19,16 @@ class Prompts : Reflection
             SubPrompt3 = "How did you get started?"
         }
     }
+}
+   
+public class ListingPrompts: ListingActivity
+{
+    public List<string> ListingPrompts = new List<string>
+    {
+        ListingPrompt1 = "Who are people that you appreciate?"
+        ListingPrompt2 = "What are personal strengths of yours?"
+        ListingPrompt3 = "Who are people that you have helped this week?"
+        ListingPrompt4 = "When have you felt the Holy Ghost this month?"
+        ListingPrompt5 = "Who are some of your personal heroes?"
+    }
+}

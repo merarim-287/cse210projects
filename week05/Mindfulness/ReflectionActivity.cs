@@ -12,9 +12,31 @@ class ReflectionActivity : Activity
         
         Console.WriteLine(prompt); //  prompt
         
-        string animationString = response.Substring(); // animation
-        Display(animationString);
+        List<string> animationStrings = new List<string>();
+        animationStrings.Add("|");
+        animationStrings.Add("/");
+        animationStrings.Add("-");
+        animationStrings.Add("\\");
+        animationStrings.Add("/");
+        animationStrings.Add("-");
+        animationStrings.Add("|");
+        animationStrings.Add("/");
+        animationStrings.Add("-");
+        animationStrings.Add("\\");
+        animationStrings.Add("/");
+        animationStrings.Add("-");
+        animationStrings.Add("|");
 
+        foreach (string s in animationStrings)
+        {
+            Console.WriteLine(s);
+            Thread.Sleep(1000);
+            Console.Write("\b \b");
+
+        }
+}
+public string responseText()
+{
         string response = Console.ReadLine(); // user response
 
         string subPrompt = GetRandomSubPrompt(prompt, response); // sub prompt
