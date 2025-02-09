@@ -2,7 +2,7 @@ class ReflectionActivity : Activity
 {
     public ReflectionActivity()
     {
-        Console.WriteLine("Welcome. This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.")
+        Console.WriteLine(message4);
         
         bool continueActivity = true;
         while (continurActivity)
@@ -11,32 +11,13 @@ class ReflectionActivity : Activity
         string prompt = GetRandomPrompt(string prompt); 
         
         Console.WriteLine(prompt); //  prompt
-        
-        List<string> animationStrings = new List<string>();
-        animationStrings.Add("|");
-        animationStrings.Add("/");
-        animationStrings.Add("-");
-        animationStrings.Add("\\");
-        animationStrings.Add("/");
-        animationStrings.Add("-");
-        animationStrings.Add("|");
-        animationStrings.Add("/");
-        animationStrings.Add("-");
-        animationStrings.Add("\\");
-        animationStrings.Add("/");
-        animationStrings.Add("-");
-        animationStrings.Add("|");
-
-        foreach (string s in animationStrings)
-        {
-            Console.WriteLine(s);
-            Thread.Sleep(1000);
-            Console.Write("\b \b");
-
+       
+        string animationString = response.Substring(); // animation
+        Display(animationString);
         }
-}
-public string responseText()
-{
+
+    public string responseText()
+    {
         string response = Console.ReadLine(); // user response
 
         string subPrompt = GetRandomSubPrompt(prompt, response); // sub prompt
@@ -47,7 +28,7 @@ public string responseText()
         string subPrimpt response = Console.ReadLine(); // user response
 
         
-        return;
+        return (message3);
         }
     }
 }

@@ -2,10 +2,17 @@ class ListingActivity : Activity
 {
     public ListingActivity()
     {
-        Console.WriteLine("This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.");
+        Console.WriteLine(message4);
+        Console.WriteLine("Se")
+
+        bool continueActivity = true;
+        while (continueActivity)
+        {
+            string prompt = GetRandomPrompt(string prompt);
+            Console.WriteLine(prompt);
 
         public GetRandomlistingPrompt(string)
         {
-          List<string> animationStrings = new List<string>(Activity); 
+        Console.DisplayList<string> animationStrings = new List<string>(Activity); 
         }   
 }

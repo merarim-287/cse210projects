@@ -2,11 +2,9 @@ class BreathingActivity : Activity
 {
     public BreathingActivity()
     {
-        Console.WriteLine("Welcome. The Breathing Activity will guide you to make breathing exercises that willl help you relax.");
-        Console.WriteLine("Please select the duration of your breathing exercise in seconds.");
-        Console.WriteLine("5seconds");
-        Console.WriteLine("10seconds");
-        Console.WriteLine("15seconds");
+        Console.Write(message2);
+        Console.Write(message2)
+        Console.Write(message5)
 
         string userInput = Console.ReadLine();
         int seconds = int.Parse(userInput);
@@ -76,6 +74,6 @@ class BreathingActivity : Activity
 
         }
         
-        Console.WriteLine("You finished your breathing exercise.");
+        Console.WriteLine(message3);
         return;
     }
