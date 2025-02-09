@@ -27,6 +27,13 @@ public class Video
         _newComments.Add(title, author, comments);
         return newComments
     }
+
+    public class CountComments()
+    {
+        public int CountComments(List<Comment> comments)
+        {
+            return comments.Count;
+        
+        }
 }
 
-public class comment
