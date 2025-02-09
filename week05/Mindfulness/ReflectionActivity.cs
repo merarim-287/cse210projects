@@ -2,7 +2,7 @@ class ReflectionActivity : Activity
 {
     public ReflectionActivity()
     {
-        Console.WriteLine(message4);
+        Console.Write(message1 + message4);
         
         bool continueActivity = true;
         while (continurActivity)
