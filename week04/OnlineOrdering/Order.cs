@@ -1,7 +1,14 @@
 public class Order
-{
-    public list<string> items
+{ 
+    public class Order()
+    {
+        public list<string> items = new List<int>();  
+        public decimal price =
+        public list<Product> products = new Order {get; set;};
+        {
 
+
+        }
    
     string menu = Console.ReadLine.("Chose from the following items:");
     ConsoleWriteLine.("");
