@@ -1,34 +1,30 @@
 public class Order
-{ 
-    public class Order()
-    {
-        public list<string> items = new List<int>();  
-        public decimal price =
-        public list<Product> products = new Order {get; set;};
-        {
-
-
-        }
-   
-    string menu = Console.ReadLine.("Chose from the following items:");
-    ConsoleWriteLine.("");
-
-
-    
-    {
-        if  (item1)
-            price = 1.99;
-    item1.Add(price)
-        {
-            Console.WriteLine(item1).AddToCart;
-        }
-
-if (item2)
-    price = 1.50;
-item2.Add(price).AddToCart;
 {
-    Console.WriteLine(item2).AddToCart;
-}
+    public List<Prod uctId> products {get; set;}
+    public label(string product)
+    {
+        label.Add(new Prod uctId(product));
+    }   
+    return label += address;
 
+    public amount {get; set;}
+    public Order(List<Prod uctId> products, amount amount)
+    {
+        list.products = products;
+        list.amount = amount;
     }
-}
+    public void addProduct(Prod uctId product)
+    {
+        list.products.Add(product);
+    }
+    total amount {get; set;}
+    public void calculateTotalAmount()
+    {
+        totalAmount = 0;
+        foreach(Prod uctId product in list.products)
+        {
+            totalAmount += product.price;
+        }
+    }
+         return totalAmount += shipping;
+    }
