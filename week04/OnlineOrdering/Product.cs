@@ -1,13 +1,17 @@
-public class Product
-{
-    public List<Prod uctId> products= new List<ProductId>{
-        new ProductID = ("item1", 4.50m),
-        new ProductID = ("item2", 5.00m),
-        new ProductID = ("item3", 1.99m),
-        new ProductID = ("item4", 2.50m),
-        new ProductID = ("item5", 1.99m),
-    };
+public class ProductId {
+    public int Id {get; set;}
+    public string Name {get; set;}
+    public decimal Price {get; set;}
+    public int Quantity {get; set;}
+
+    public ProductId(int id, string name, decimal price) {
+        Id = id;
+        Name = name;
+        Price = price;
+        Quantity = quantity;
+    }   
 }
+
    
 
     
