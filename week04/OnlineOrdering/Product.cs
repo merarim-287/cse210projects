@@ -12,6 +12,10 @@ public class ProductId {
     }   
 }
 
-   
+public int Quantity (int quantity)
+
+}
+
+    
 
     
