@@ -9,14 +9,28 @@ public class Program
     
     }
 }
+public class Product 
+{ 
+    public int Id {get; set;}
+    public string Name {get; set;}
+    public decimal Price {get; set;}
+    public int Quantity {get; set;}
 
-public class ProductId 
+    public Product(int id, string name, decimal price, int quantity)
     {
-        public string Name { get; set; }
-        public decimal Price { get; set; }
+        Id = id;
+        Name = name;
+        Price = price;
+        Quantity = quantity;
     }
 
-    public class Order
+    public decimal TotalPrice(int quantity)
+    {
+        return Price * Quantity;
+    }
+
+}
+public class Order
     {
         public List<Product> Items { get; set; }
         public decimal Total { get; set; }
@@ -56,6 +70,17 @@ public class ProductId
         }
     }
 
+public string GetPackingLabel()
+{
+    string label ="";
+
+    foreach (ProductId product in Order.Items)
+    {
+        label += $"Product: {product.Name}, Quantity: {product.Quantity}, Price: {product.Price}\n";
+    }
+
+    return GetPackingLabel;
 }
+
 
 
