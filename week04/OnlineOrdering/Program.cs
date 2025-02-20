@@ -2,85 +2,39 @@ public class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the OnlineOrdering Project.");
-        Console.WriteLine("Please enter the Product Id and quantity:")
-        string input = Console.ReadLine();
-        int productId = int.Parse(input);
-    
+        Console.WriteLine("Hello World! this is the online ordering project.");
     }
 }
-public class Product 
-{ 
+
+public class Order
+{
     public int Id {get; set;}
     public string Name {get; set;}
-    public decimal Price {get; set;}
-    public int Quantity {get; set;}
+    public decimal TotalPrice {get; set;}
+    public List<Product> Products {get; set;}
 
-    public Product(int id, string name, decimal price, int quantity)
+    public Order()
     {
-        Id = id;
-        Name = name;
-        Price = price;
-        Quantity = quantity;
+        Products = new List<Product>();
     }
 
-    public decimal TotalPrice(int quantity)
+    public void AddProduct(Product product)
     {
-        return Price * Quantity;
+        Products.Add(product);
+        TotalPrice += product.Price;
     }
 
+public void Label()
+{ 
+    private Customer customerName;
+    private Adress address;
+    private Order order;
+
+
+    Console.WriteLine("Product Name\t\tProduct\t\tProduct Quantity");
+    foreach (Product product in Products)
+    {
+        Console.WriteLine($"{product.Name}\t\t{product.Price}\t\t{product.Quantity}\t\t{customerName.Name}\t\t{adress.Adress}");
+
+    }
 }
-public class Order
-    {
-        public List<Product> Items { get; set; }
-        public decimal Total { get; set; }
-    }
-    public class Cart
-    {
-        public List<Product> Items { get; set; }
-        public decimal Total { get; set; }
-    }
-    public class Customer
-    {
-        Console.WriteLine("Please enter your name:");
-        string name = Console.ReadLine();
-        string input = Console.ReadLine();
-        
-        public string Name { get; set; }
-    }
-
-    public class shipping
-    {
-        public decimal Price { get; set; }
-        shipping _Price { get; set; }
-    }
-
-    public class Payment
-    {
-        public decimal Amount { get; set; }
-        
-        return Product + " " + Name + " " + Price + " " + shipping;
-    }
-
-    {
-        public class Order(List<ProductId)
-        {
-            public List<ProductId> Items { get; set; }
-            public decimal Total { get; set; }
-        }
-    }
-
-public string GetPackingLabel()
-{
-    string label ="";
-
-    foreach (ProductId product in Order.Items)
-    {
-        label += $"Product: {product.Name}, Quantity: {product.Quantity}, Price: {product.Price}\n";
-    }
-
-    return GetPackingLabel;
-}
-
-
-
