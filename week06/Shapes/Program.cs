@@ -7,5 +7,13 @@ class Program
         Square square = new Square();
 
         square.Display();
+
+        Rectangle rectangle = new Rectangle();
+
+        rectangle.Display();
+
+        Circle circle = new Circle();
+
+        circle.Display();
     }
 }
