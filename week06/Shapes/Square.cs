@@ -1,7 +1,7 @@
 public class Square: Shape
 {
     private double _side;
-    public Square(string color, double _side)
+    public Square(string color, double _side) : base (color)
     {
         _side = side;
     }
